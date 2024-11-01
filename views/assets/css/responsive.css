@@ -1,0 +1,14 @@
+@media only screen and (max-width: 768px){
+	.sb-product-wrapper .quick-img-wrapp,
+	.sb-quick-content-wrapp {
+	    max-width: 100% !important;
+	    flex: 1 1 100%;
+	}
+	.sb-product-wrapper .price-wrapp, .sb-product-wrapper form.cart{
+		display:block;
+	}
+	.sb-quick-view-wrapp table.variations{
+		margin: 0;
+	}
+	
+}

@@ -1,0 +1,218 @@
+.plugin-info {
+    padding: 5px 50px;
+    position: relative;
+}
+.plugin-info h2.pl-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.plugin-info .pl-ver {
+    font-weight: 500;
+    font-style: italic;
+    color: #777;
+}
+.plugin-info img {
+    position: absolute;
+    left: 20px;
+    top: calc(50% - 4px);
+}
+.sb-settings-wrapper{
+	display: grid;
+	grid-template-columns: fit-content(30%) 1fr;
+}
+.sb-settings-wrapper .menu-wrapp ul li {
+    border-top: 1px solid #E0E4E9;
+    padding: 25px 10px 25px 30px;
+    border-left: 2px solid transparent;
+    position: relative;
+    margin: 0;
+}
+.sb-settings-wrapper .menu-item {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.menu-wrapp ul li:hover,
+.menu-wrapp ul li.active {
+    background-color: #fff;
+    cursor: pointer;
+    border-left: 2px solid #5b9dd9;
+}
+.sb-settings-wrapper .menu-wrapp ul li .dashicons {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 12px);
+    margin: 0 4px;
+}
+.sb-settings-wrapper span.menu-info {
+    font-size: 12px;
+    color: #777;
+}
+
+.setting-display-wrapper{
+	background-color: #fff;
+	padding: 0 25px;
+}
+.setting-title {
+    border-bottom: 2px solid #f1f1f1;
+    padding: 20px 0;
+    position: relative;
+    margin-bottom: 45px;
+}
+.setting-title:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background: #5b9dd9;
+}
+.setting-title h3 {
+    font-size: 22px;
+    margin: 0;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.setting-title .dashicons {
+    background: #5b9dd9;
+    color:#fff;
+    padding: 15px;
+    vertical-align: middle;
+}
+.setting-title * {
+    display: inline-block;
+}
+
+.setting-display-wrapper .sb-admin{
+	display: none;
+}
+.setting-display-wrapper .sb-admin.sb-dashboard{
+	display: block;
+}
+
+/* Checkbox Switcher */
+.sb-switch input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.sb-switch label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 55px;
+    height: 30px;
+    background: #fff;
+    display: block;
+    position: relative;
+}
+
+.sb-switch label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: #7D7D7D;
+    transition: 0.3s;
+}
+.sb-switch input:checked + label:after{
+    background: #2271B1;
+}
+
+.sb-switch input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    background: #2271B1;
+}
+
+.sb-switch label:active:after {
+    width: 50px;
+}
+
+/*  */
+.grid-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.setting-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sb-setting-items {
+    background-color: #f0f0f1;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+}
+.setting-info {
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 10px;
+    color: #777;
+}
+/* select styles */
+.sb-select-wrapp select {
+    width: 180px;
+    height: 40px;
+    border-color: #666;
+   
+}
+/*  */
+.save-notice {
+    background: #fae4e4;
+    padding: 20px;
+    text-align: center;
+}
+.sb-setting-items .setting-item:not(:first-child) {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #d5d5e6;
+}
+/* input text */
+.sb-setting-items input[type="text"] {
+    border-radius: 0;
+    border-color: #666;
+    min-height: 40px;
+    width: 250px;
+}
+
+.inner-settings-help-wrapper {
+    display: grid;
+    grid-template-columns: 1fr fit-content(30%);
+    grid-column-gap: 15px;
+}
+.inner-settings-help h3 {
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+    color: #5b9dd9;
+    margin-top: 0;
+}
+.help-box .steps-wrapp {
+    background: #F9FAFB;
+    padding: 10px;
+}
+/*  */
+input[type=checkbox].single {
+    border-radius: 0;
+    border-color: #666;
+    height: 25px;
+    width: 25px;
+}
+input[type=checkbox].single:checked::before {
+    height: 25px;
+    width: 25px;
+    margin: 0;
+}
+/*  */
+input.button.button-primary.sb-save-btn{
+    border-radius: 0;
+    padding: 6px 20px;
+}

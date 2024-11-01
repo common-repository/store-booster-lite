@@ -1,0 +1,88 @@
+/**
+* Single Product sticky bar styles
+*
+*/
+.single-product footer{
+    margin-bottom: 80px;
+}
+.sb-single-product-sales-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    height: 80px;
+    background: #FFF;
+    z-index: 99;
+    -webkit-box-shadow: -2px 2px 45px -15px rgb(0 0 0 / 30%);
+            box-shadow: -2px 2px 45px -15px rgb(0 0 0 / 30%);
+}
+.sb-single-product-sales-bar .sb-container,
+.sb-single-product-sales-bar .sb-container .left-wrapp,
+.sb-single-product-sales-bar .sb-container .right-wrapp,
+.sb-single-product-sales-bar .sb-container form.cart{
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+
+.sb-single-product-sales-bar .sb-container .img-wrapp{
+    height: 80px;
+    width: 80px;
+    margin-right: 25px;
+}
+
+.sb-single-product-sales-bar .sb-container .left-wrapp h1 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.sb-single-product-sales-bar .right-wrapp .price {
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 20px;
+}
+.sb-single-product-sales-bar .right-wrapp p.price del {
+    color: #948d8d;
+}
+.sb-single-product-sales-bar .right-wrapp p.price ins {
+    background: transparent;
+    font-size: 22px;
+}
+.sb-single-product-sales-bar button.single_add_to_cart_button.button.alt {
+    margin-left: 40px;
+    width: 155px;
+}
+
+
+.sb-single-product-sales-bar .single_variation_wrap {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+.sb-single-product-sales-bar .single_variation_wrap {
+    width: 150%;
+}
+.sb-single-product-sales-bar .single_variation_wrap,
+.sb-single-product-sales-bar .woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled,
+.sb-single-product-sales-bar .woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+.sb-single-product-sales-bar a.reset_variations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none !important;
+}
+.sb-single-product-sales-bar table.variations {
+    margin: 0;
+    padding: 0;
+}
